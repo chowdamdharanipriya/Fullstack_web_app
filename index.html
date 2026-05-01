@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Manager</title>
+</head>
+<body>
+
+<h2>Signup</h2>
+<input id="email" placeholder="email">
+<input id="password" placeholder="password">
+<select id="role">
+  <option>admin</option>
+  <option>member</option>
+</select>
+<button onclick="signup()">Signup</button>
+
+<h2>Create Task</h2>
+<input id="title" placeholder="task">
+<input id="assignedTo" placeholder="assigned to">
+<input id="dueDate" type="date">
+<button onclick="createTask()">Add Task</button>
+
+<h2>Tasks</h2>
+<button onclick="getTasks()">Load Tasks</button>
+<ul id="tasks"></ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
